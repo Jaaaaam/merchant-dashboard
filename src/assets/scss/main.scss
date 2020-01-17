@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import './variables.scss';
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Muli', sans-serif;
+}
