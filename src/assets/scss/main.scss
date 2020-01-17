@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import './variables.scss';
+@import './animations.scss';
 
 html, body, #root {
   height: 100%;
   width: 100%;
   font-family: 'Muli', sans-serif;
+}
+
+.content {
+  position: absolute;
+  top: 60px;
+  left: 300px;
+  width: calc(100% - (300px + 100px));
+  height: calc(100% - 160px);
+  background-color: $light-gray-1;
+  padding: 50px;
 }

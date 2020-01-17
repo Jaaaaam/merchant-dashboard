@@ -3,18 +3,18 @@ import { faChevronRight, faUserCog, faChevronDown } from '@fortawesome/free-soli
 import Dropdown from './Dropdown';
 import UserImage from '../assets/images/user-image.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import {AuthContext} from '../context/Auth';
-// import { withRouter } from 'react-router-dom';
+import {AuthContext} from '../contexts/Auth';
+import { withRouter } from 'react-router-dom';
 import '../assets/scss/topnav.scss';
 
 function Topnav(props) {
-  // const { dispatch } = useContext(AuthContext);
-  // const logout = () => {
-  //   localStorage.removeItem('hris-user');
-  //   localStorage.removeItem('hris-is-authenticated');
-  //   dispatch({type: 'logout'});
-  //   props.history.push('/');
-  // }
+  const { dispatch } = useContext(AuthContext);
+  const logout = () => {
+    localStorage.removeItem('hris-user');
+    localStorage.removeItem('hris-is-authenticated');
+    dispatch({type: 'logout'});
+    props.history.push('/');
+  }
 
   return (
     <div className="topnav">
@@ -37,7 +37,7 @@ function Topnav(props) {
                 <div>
                   Settings
                 </div>
-                <div>
+                <div onClick={logout}>
                   Logout
                 </div>
               </Dropdown>
@@ -51,4 +51,4 @@ function Topnav(props) {
   )
 }
 
-export default Topnav;
+export default withRouter(Topnav);
