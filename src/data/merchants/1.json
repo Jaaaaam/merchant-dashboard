@@ -1,0 +1,248 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Robinson's Appliances",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Robinson's Appliances",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Automatic Center",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Daiso Japan",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Colours Photoshop",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Columbia Computer",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Technomart",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Watch Republic",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Robinson's Appliances",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "Calvin Klein Jeans",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    }
+  ],
+  "totalPages": 5,
+  "prevPage": null,
+  "nextPage": 2,
+  "currentPage": 1
+}
