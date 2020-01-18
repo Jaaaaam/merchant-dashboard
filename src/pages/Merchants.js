@@ -1,20 +1,29 @@
 import React, {useState, useEffect, Fragment} from 'react';
 import axios from 'axios';
 import List from '../components/List/List';
-import AddEditMerchant from '../components/AddEditMerchant';
+import AddEditMerchant from '../components/Merchant/AddEditMerchant';
+import ShowMerchantModal from '../components/Merchant/ShowMerchantModal';
 
 function Merchants(props) {
   const [merchants, setMerchants] = useState([]);
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [activeMerchant, setActiveMerchant] = useState({});
+  const [addEditModalIsOpen, setAddEditModalIsOpen] = useState(false);
+  const [showModalIsOpen, setShowModalIsOpen] = useState(false);
   const [modalType, setModalType] = useState('');
   
   const addMerchant = () => {
     setModalType('add');
-    setModalIsOpen(true);
+    setAddEditModalIsOpen(true);
   }
 
-  const closeModal = () => {
-    setModalIsOpen(false);
+  const closeAddEditModal = () => {
+    setAddEditModalIsOpen(false);
+    setActiveMerchant({});
+  }
+
+  const closeShowModal = () => {
+    setShowModalIsOpen(false);
+    setActiveMerchant({});
   }
 
   useEffect(()=> {
@@ -35,11 +44,21 @@ function Merchants(props) {
           <button className="primary-button" onClick={()=>{addMerchant()}}>Add Merchant</button>
         </div>
       </div>
-      <List data={merchants} setMerchants={setMerchants} />
+      <List 
+        data={merchants}
+        setMerchants={setMerchants}
+        setActiveMerchant={setActiveMerchant}
+        setShowModalIsOpen={setShowModalIsOpen}
+        setAddEditModalIsOpen={setAddEditModalIsOpen} />
+      <ShowMerchantModal
+        merchant={activeMerchant}
+        isOpen={showModalIsOpen}
+        onClose={closeShowModal}/>
       <AddEditMerchant
-        isOpen={modalIsOpen}
+        merchant={activeMerchant}
+        isOpen={addEditModalIsOpen}
         type={modalType}
-        onClose={closeModal}
+        onClose={closeAddEditModal}
       />
     </Fragment>
   )

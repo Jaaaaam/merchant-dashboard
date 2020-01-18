@@ -3,7 +3,14 @@ import Swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt, faEdit } from '@fortawesome/free-solid-svg-icons'
 
-function ListItem({id, name, data, setMerchants, ...rest}) {
+function ListItem({id, name, shippingFee, data, setMerchants, setActiveMerchant, setAddEditModalIsOpen, setShowModalIsOpen, ...rest}) {
+  const showMerchant = () => {
+    setActiveMerchant({id, name, shippingFee});
+    setShowModalIsOpen(true);
+  }
+  const editMerchant = () => {
+    setAddEditModalIsOpen(true)
+  }
   const deleteMerchant = () => {
     Swal.fire({
       title: 'Are you sure?',
@@ -31,18 +38,18 @@ function ListItem({id, name, data, setMerchants, ...rest}) {
 
   return (
     <div className="list-item">
-        <div className="list-item-name">{name}</div>
-        <div className="list-item-actions">
-          <div className="list-item-action-item">
-            <FontAwesomeIcon icon={faEdit} className="list-icon" />
-            Edit
-          </div>
-          <div className="list-item-action-item" onClick={() => deleteMerchant()}>
-            <FontAwesomeIcon icon={faTrashAlt} className="list-icon"/>
-            Delete
-          </div>
+      <div className="list-item-name"  onClick={() => {showMerchant()}}>{name}</div>
+      <div className="list-item-actions">
+        <div className="list-item-action-item" onClick={() => editMerchant()}>
+          <FontAwesomeIcon icon={faEdit} className="list-icon" />
+          Edit
+        </div>
+        <div className="list-item-action-item" onClick={() => deleteMerchant()}>
+          <FontAwesomeIcon icon={faTrashAlt} className="list-icon"/>
+          Delete
         </div>
       </div>
+    </div>
 
   )
 }
