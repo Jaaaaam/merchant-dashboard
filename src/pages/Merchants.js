@@ -2,8 +2,6 @@ import React, {useState, useEffect, Fragment} from 'react';
 import axios from 'axios';
 import List from '../components/List/List';
 import AddEditMerchant from '../components/AddEditMerchant';
-import Modal from 'react-responsive-modal';
-
 
 function Merchants(props) {
   const [merchants, setMerchants] = useState([]);
@@ -37,7 +35,7 @@ function Merchants(props) {
           <button className="primary-button" onClick={()=>{addMerchant()}}>Add Merchant</button>
         </div>
       </div>
-      <List data={merchants} />
+      <List data={merchants} setMerchants={setMerchants} />
       <AddEditMerchant
         isOpen={modalIsOpen}
         type={modalType}
