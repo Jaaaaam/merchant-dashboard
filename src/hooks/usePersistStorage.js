@@ -5,6 +5,7 @@ const usePersistStorage = (key) => {
   const [value, setValue] = useState(val);
 
   useEffect(() => {
+    if (!value) return;
     localStorage.setItem(key,value)
   }, [key, value]);
 

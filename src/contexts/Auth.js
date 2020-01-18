@@ -33,8 +33,8 @@ const reducer = ( (state, { type, payload }) => {
       const isAuthenticated = !!user;
 
       if (isAuthenticated) {
-        localStorage.setItem('hris-user', JSON.stringify(user));
-        localStorage.setItem('hris-is-authenticated', true);
+        localStorage.setItem('merch-dash-user', JSON.stringify(user));
+        localStorage.setItem('merch-dash-is-authenticated', true);
       }
       return {
         ...state,

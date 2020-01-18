@@ -69,7 +69,7 @@
         font-size: 40px;
         margin-bottom: 50px;
         font-weight: bold;
-        color: $pink;
+        color: $primary-color;
       }
 
       .input-icon {
@@ -93,7 +93,7 @@
 
         &:focus {
           outline: none;
-          border-bottom: 4px solid lighten($pink, 15%);
+          border-bottom: 4px solid lighten($primary-color, 15%);
         }
       }
 

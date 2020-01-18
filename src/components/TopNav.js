@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { faChevronRight, faUserCog, faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import Dropdown from './Dropdown';
+import Dropdown from './Dropdown/Dropdown';
 import UserImage from '../assets/images/user-image.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {AuthContext} from '../contexts/Auth';
@@ -10,8 +10,8 @@ import '../assets/scss/topnav.scss';
 function Topnav(props) {
   const { dispatch } = useContext(AuthContext);
   const logout = () => {
-    localStorage.removeItem('hris-user');
-    localStorage.removeItem('hris-is-authenticated');
+    localStorage.removeItem('merch-dash-user');
+    localStorage.removeItem('merch-dash-is-authenticated');
     dispatch({type: 'logout'});
     props.history.push('/');
   }

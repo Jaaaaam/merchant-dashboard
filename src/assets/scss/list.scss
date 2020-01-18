@@ -1,0 +1,41 @@
+@import './variables.scss';
+
+.list {
+  background-color: $white;
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.05), 0 1px 10px 0 rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.05), 0 1px 10px 0 rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.05);
+
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border-bottom: 1px solid $light-gray-2;
+    cursor: pointer;
+    &:last-child {
+      border-bottom: none;
+    }
+    &:hover {
+      font-weight: bold;
+      background-color: $light-gray-2;
+    }
+
+    .list-item-actions {
+      display: flex;
+      justify-content: space-around;
+
+      .list-item-action-item {
+        margin: 0 10px;
+        .list-icon {
+          margin-right: 5px;
+        }
+        &:last-child {
+          margin-right: 0px;
+        }
+        &:hover {
+          color: $primary-color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

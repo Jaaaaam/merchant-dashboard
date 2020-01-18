@@ -10,7 +10,7 @@ import Sidenav from '../components/SideNav';
 
 function PrivateRoute({ menu, component: Component, ...rest }) {
   const { authState } = useContext(AuthContext)
-  const [persistedValue] = usePersistStorage('hris-is-authenticated');
+  const [persistedValue] = usePersistStorage('merch-dash-is-authenticated');
 
   return (
     <Route 

@@ -1,9 +1,11 @@
 import React from 'react';
+import List from '../components/List/List';
 
 function Merchants() {
   return (
     <div>
-      Merchants
+      <h2>Merchants</h2>
+      <List />
     </div>
   )
 }

@@ -51,6 +51,7 @@ function Login(props) {
                 transitionEnterTimeout={500}
                 transitionLeaveTimeout={300}
                 transitionAppear={true}
+                transitionAppearTimeout={500} 
                 >
                 <div className="login-main-header">
                   <img src={logo}/>
@@ -66,6 +67,7 @@ function Login(props) {
           transitionEnterTimeout={500}
           transitionLeaveTimeout={300}
           transitionAppear={true}
+          transitionAppearTimeout={500}
           >
         <form className="login-form" onSubmit={login}>
             <div className="login-header">Welcome Back!</div>
