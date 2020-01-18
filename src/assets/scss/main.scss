@@ -13,8 +13,35 @@ html, body, #root {
   top: 60px;
   left: 300px;
   width: calc(100% - (300px + 100px));
-  height: calc(100% - 160px);
+  min-height: calc(100% - 160px);
   background-color: $light-gray-1;
   padding: 50px;
   color: $main-text-color;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  .page-header-actions {
+    display: flex;
+    align-items: center;
+  }
+}
+
+button {
+  background: none;
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.primary-button {
+  background-color: lighten($pink, 7%);
+  border: 1px solid $light-gray-1;
+  border-radius: 10px;
+  padding: 5px 15px;
+  outline: none;
+  color: $white;
+  font-weight: bold;
+  font-size: 16px;
 }

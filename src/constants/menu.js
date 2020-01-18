@@ -13,7 +13,7 @@ export const publicRoutes = [
 ]
 
 export const privateRoutes = [
-  { path: '/dashboard', component: Dashboard, name: 'Dashboard', icon: faColumns },
-  { path: '/merchants', component: Merchants, name: 'Merchants', icon: faKeyboard },
-  { path: '/settings', component: Settings, name: 'Settings', icon: faCogs, customClass: 'last' },
+  { path: '/dashboard', component: Dashboard, name: 'Dashboard', icon: faColumns, showInMenu: true },
+  { path: '/merchants', component: Merchants, name: 'Merchants', icon: faKeyboard, showInMenu: true },
+  { path: '/settings', component: Settings, name: 'Settings', icon: faCogs, showInMenu: true, customClass: 'last' },
 ]

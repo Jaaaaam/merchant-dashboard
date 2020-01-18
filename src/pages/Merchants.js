@@ -1,23 +1,49 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, Fragment} from 'react';
 import axios from 'axios';
 import List from '../components/List/List';
+import AddEditMerchant from '../components/AddEditMerchant';
+import Modal from 'react-responsive-modal';
 
-function Merchants() {
+
+function Merchants(props) {
   const [merchants, setMerchants] = useState([]);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalType, setModalType] = useState('');
+  
+  const addMerchant = () => {
+    setModalType('add');
+    setModalIsOpen(true);
+  }
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  }
 
   useEffect(()=> {
     const getMerchants = async() => {
-      const res = await axios.get('../data/merchants/1.json');
-      console.log(res, 'res')
+      const { data: {data} } = await axios.get('../data/merchants/1.json');
+      setMerchants(data);
     }
     
     getMerchants();
   }, [])
   return (
-    <div>
-      <h2>Merchants</h2>
-      <List />
-    </div>
+    <Fragment>
+      <div className="page-header">
+        <div className="page-header-title">
+          <h2>Merchants</h2>
+        </div>
+        <div className="page-header-actions">
+          <button className="primary-button" onClick={()=>{addMerchant()}}>Add Merchant</button>
+        </div>
+      </div>
+      <List data={merchants} />
+      <AddEditMerchant
+        isOpen={modalIsOpen}
+        type={modalType}
+        onClose={closeModal}
+      />
+    </Fragment>
   )
 }
 

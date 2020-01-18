@@ -17,7 +17,9 @@ function Sidenav({ menu, location, ...rest }) {
           </div>
           <div className="sidenav-menu">
                 {
-                  menu.map(({ path, name, icon, customClass }) => (
+                  menu.map(({ path, name, icon, showInMenu, customClass }) => (
+                  
+                  (showInMenu) ?
                   <div className="sidenav-menu-list" key={ uuidv4() }>
                     <Link to={ path }>
                       <div className={`sidenav-menu-item ${customClass} ${location.pathname === path && 'active'}`}>
@@ -25,7 +27,9 @@ function Sidenav({ menu, location, ...rest }) {
                         { name }
                       </div>
                     </Link>
-                    </div>
+                  </div>
+                  :
+                  ''
                   ))
                 }
               </div>
