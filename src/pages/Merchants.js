@@ -4,6 +4,7 @@ import List from '../components/List/List';
 import Pagination from '../components/Pagination';
 import AddEditMerchant from '../components/Merchant/AddEditMerchant';
 import ShowMerchantModal from '../components/Merchant/ShowMerchantModal';
+import uuid from 'uuid/v4';
 
 function Merchants(props) {
   const [merchants, setMerchants] = useState([]);
@@ -28,7 +29,7 @@ function Merchants(props) {
 
   const getMerchants = async(page = 1) => {
     const {data} = await axios.get(`../data/merchants/${page}.json`);
-    console.log(data, 'res')
+
     const { totalPages, prevPage, nextPage,currentPage } = data;
     setMerchants(data.data);
     setPageInfo({totalPages, prevPage, nextPage,currentPage})
@@ -36,7 +37,7 @@ function Merchants(props) {
 
   const renderPaginator = () => {
     if (!Object.entries(pageInfo).length) return;
-    console.log(pageInfo, 'pageInfo test')
+
     return (
       <Pagination
         activePage={pageInfo.currentPage}
@@ -48,6 +49,53 @@ function Merchants(props) {
 
   const onPageClick = async({isActive, value}) => {
     await getMerchants(value)
+  }
+
+  const submit = (form) => {
+    const { id } = activeMerchant;
+    const { name, mmBox, mmLargePouch, mmOversized, mmSmallPouch, provBox, provLargePouch, provOversized, provSmallPouch, intraBox, intraLargePouch, intraOversized, intraSmallPouch } = form;
+
+    const newMerchant = {
+      name,
+      shippingFee: {
+        metroManila: {
+          box: mmBox,
+          oversized: mmOversized,
+          smallPouch: mmSmallPouch,
+          largePouch: mmLargePouch
+        },
+        provincial: {
+          box: provBox,
+          oversized: provOversized,
+          smallPouch: provSmallPouch,
+          largePouch: provLargePouch
+        },
+        intraProvincial: {
+          box: intraBox,
+          oversized: intraOversized,
+          smallPouch: intraSmallPouch,
+          largePouch: intraLargePouch
+        }
+      }
+    }
+
+    if (id) {
+      const merchantsCopy = [...merchants];
+      newMerchant.id = id;
+      let merchant = merchantsCopy.find((data) => data.id === id);
+      const index = merchantsCopy.indexOf(merchant);
+      merchantsCopy[index] = newMerchant;
+      setMerchants(merchantsCopy)
+      setAddEditModalIsOpen(false)
+      return
+    }
+
+    newMerchant.id = uuid();
+    setMerchants([
+      newMerchant,
+      ...merchants
+    ])
+    setAddEditModalIsOpen(false)
   }
 
   useEffect(()=> {
@@ -75,6 +123,7 @@ function Merchants(props) {
         isOpen={showModalIsOpen}
         onClose={closeShowModal}/>
       <AddEditMerchant
+        submit={submit}
         merchant={activeMerchant}
         isOpen={addEditModalIsOpen}
         onClose={closeAddEditModal}

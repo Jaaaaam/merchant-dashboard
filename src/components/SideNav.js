@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Logo from '../assets/images/logo.png';
 import uuidv4 from 'uuid/v4';
@@ -8,7 +9,7 @@ import '../assets/scss/sidenav.scss';
 
 function Sidenav({ menu, location, ...rest }) {
   return (
-    <div className="sidenav">
+      <div className="sidenav">
         <div className="sidenav-content">
           <div className="sidenav-header">
           <div className="sidenav-header">

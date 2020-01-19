@@ -7,19 +7,19 @@
         "metroManila": {
           "box": 200,
           "oversized": 300,
-          "bigPouch": 100,
+          "largePouch": 100,
           "smallPouch": 50
         },
         "provincial": {
           "box": 400,
           "oversized": 500,
-          "bigPouch": 200,
+          "largePouch": 200,
           "smallPouch": 100
         },
         "intraProvincial": {
           "box": 500,
           "oversized": 600,
-          "bigPouch": 300,
+          "largePouch": 300,
           "smallPouch": 200
         }
       }
@@ -31,19 +31,19 @@
         "metroManila": {
           "box": 200,
           "oversized": 300,
-          "bigPouch": 100,
+          "largePouch": 100,
           "smallPouch": 50
         },
         "provincial": {
           "box": 400,
           "oversized": 500,
-          "bigPouch": 200,
+          "largePouch": 200,
           "smallPouch": 100
         },
         "intraProvincial": {
           "box": 500,
           "oversized": 600,
-          "bigPouch": 300,
+          "largePouch": 300,
           "smallPouch": 200
         }
       }
@@ -55,19 +55,19 @@
         "metroManila": {
           "box": 200,
           "oversized": 300,
-          "bigPouch": 100,
+          "largePouch": 100,
           "smallPouch": 50
         },
         "provincial": {
           "box": 400,
           "oversized": 500,
-          "bigPouch": 200,
+          "largePouch": 200,
           "smallPouch": 100
         },
         "intraProvincial": {
           "box": 500,
           "oversized": 600,
-          "bigPouch": 300,
+          "largePouch": 300,
           "smallPouch": 200
         }
       }
@@ -79,19 +79,19 @@
         "metroManila": {
           "box": 200,
           "oversized": 300,
-          "bigPouch": 100,
+          "largePouch": 100,
           "smallPouch": 50
         },
         "provincial": {
           "box": 400,
           "oversized": 500,
-          "bigPouch": 200,
+          "largePouch": 200,
           "smallPouch": 100
         },
         "intraProvincial": {
           "box": 500,
           "oversized": 600,
-          "bigPouch": 300,
+          "largePouch": 300,
           "smallPouch": 200
         }
       }
@@ -103,19 +103,19 @@
         "metroManila": {
           "box": 200,
           "oversized": 300,
-          "bigPouch": 100,
+          "largePouch": 100,
           "smallPouch": 50
         },
         "provincial": {
           "box": 400,
           "oversized": 500,
-          "bigPouch": 200,
+          "largePouch": 200,
           "smallPouch": 100
         },
         "intraProvincial": {
           "box": 500,
           "oversized": 600,
-          "bigPouch": 300,
+          "largePouch": 300,
           "smallPouch": 200
         }
       }
@@ -127,19 +127,19 @@
         "metroManila": {
           "box": 200,
           "oversized": 300,
-          "bigPouch": 100,
+          "largePouch": 100,
           "smallPouch": 50
         },
         "provincial": {
           "box": 400,
           "oversized": 500,
-          "bigPouch": 200,
+          "largePouch": 200,
           "smallPouch": 100
         },
         "intraProvincial": {
           "box": 500,
           "oversized": 600,
-          "bigPouch": 300,
+          "largePouch": 300,
           "smallPouch": 200
         }
       }
@@ -151,19 +151,19 @@
         "metroManila": {
           "box": 200,
           "oversized": 300,
-          "bigPouch": 100,
+          "largePouch": 100,
           "smallPouch": 50
         },
         "provincial": {
           "box": 400,
           "oversized": 500,
-          "bigPouch": 200,
+          "largePouch": 200,
           "smallPouch": 100
         },
         "intraProvincial": {
           "box": 500,
           "oversized": 600,
-          "bigPouch": 300,
+          "largePouch": 300,
           "smallPouch": 200
         }
       }
@@ -175,19 +175,19 @@
         "metroManila": {
           "box": 200,
           "oversized": 300,
-          "bigPouch": 100,
+          "largePouch": 100,
           "smallPouch": 50
         },
         "provincial": {
           "box": 400,
           "oversized": 500,
-          "bigPouch": 200,
+          "largePouch": 200,
           "smallPouch": 100
         },
         "intraProvincial": {
           "box": 500,
           "oversized": 600,
-          "bigPouch": 300,
+          "largePouch": 300,
           "smallPouch": 200
         }
       }
@@ -199,19 +199,19 @@
         "metroManila": {
           "box": 200,
           "oversized": 300,
-          "bigPouch": 100,
+          "largePouch": 100,
           "smallPouch": 50
         },
         "provincial": {
           "box": 400,
           "oversized": 500,
-          "bigPouch": 200,
+          "largePouch": 200,
           "smallPouch": 100
         },
         "intraProvincial": {
           "box": 500,
           "oversized": 600,
-          "bigPouch": 300,
+          "largePouch": 300,
           "smallPouch": 200
         }
       }
@@ -223,19 +223,19 @@
         "metroManila": {
           "box": 200,
           "oversized": 300,
-          "bigPouch": 100,
+          "largePouch": 100,
           "smallPouch": 50
         },
         "provincial": {
           "box": 400,
           "oversized": 500,
-          "bigPouch": 200,
+          "largePouch": 200,
           "smallPouch": 100
         },
         "intraProvincial": {
           "box": 500,
           "oversized": 600,
-          "bigPouch": 300,
+          "largePouch": 300,
           "smallPouch": 200
         }
       }

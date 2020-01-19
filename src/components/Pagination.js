@@ -15,7 +15,7 @@ const Pagination = ({
   customClass,
   customStyle
 }) => {
-  console.log(activePage, totalPageCount)
+
   const repeatWhile = (fn, condition) => function () {
     let count = 0;
     while (condition(count++)) fn(count);
