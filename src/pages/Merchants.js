@@ -48,6 +48,7 @@ function Merchants(props) {
   }
 
   const onPageClick = async({isActive, value}) => {
+    console.log(value, 'HEY')
     await getMerchants(value)
   }
 

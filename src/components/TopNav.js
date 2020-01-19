@@ -28,8 +28,8 @@ function Topnav({ menu, history, location, ...rest }) {
   const renderMobileMenu = () => {
     return menu.map(({ path, name, icon, showInMenu, customClass }) => (
       (showInMenu) ?
-        <div className="dropdown-item">
-          <Link to={ path } key={uuid()}>
+        <div key={uuid()} className="dropdown-item">
+          <Link to={ path }>
             { name }
           </Link>
         </div>

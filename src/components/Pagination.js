@@ -10,7 +10,6 @@ import uuidv4 from 'uuid/v4';
 const Pagination = ({
   activePage,
   totalPageCount,
-  // onPrevNextClick,
   fn,
   customClass,
   customStyle
@@ -25,14 +24,10 @@ const Pagination = ({
     activePage: 1
   });
 
-  // useEffect(() => {
-  //   if (paginator !== '') {
-  //     onPrevNextClick(paginator);
-  //   }
-  // }, [onPrevNextClick, paginator]);
-
   const onClickNext = () => {
+    console.log(activePage, 'activePage')
     if (totalPageCount === activePage) return;
+    fn({value: activePage + 1})
     setPaginator({
       ...paginator,
       activePage: activePage + 1
@@ -41,6 +36,8 @@ const Pagination = ({
 
   const onClickPrev = () => {
     if (activePage === 1) return;
+
+    fn({value: activePage - 1})
     setPaginator({
       ...paginator,
       activePage: activePage - 1
@@ -128,20 +125,5 @@ const Pagination = ({
     </div>
   );
 };
-
-// Pagination.propTypes = {
-//   activePage: PropTypes.number.isRequired, // 1
-//   totalPageCount: PropTypes.number.isRequired,
-//   onPrevNextClick: PropTypes.func.isRequired,
-//   fn: PropTypes.func.isRequired,
-//   customClass: PropTypes.string,
-//   customStyle: PropTypes.instanceOf(Object)
-// };
-
-// Pagination.defaultProps = {
-//   customClass: '',
-//   customStyle: {}
-// };
-
 
 export default Pagination;

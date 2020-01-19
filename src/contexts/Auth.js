@@ -11,8 +11,8 @@ const dummyUsers = [
   },
   {
     id: 2,
-    email: 'louie@test.com',
-    name: 'Louie Foronda',
+    email: 'johndoe@test.com',
+    name: 'John Doe',
     password: 'test123',
     role: 'admin',
     position: 'developer'
