@@ -5,16 +5,19 @@ import Dropdown from './Dropdown/Dropdown';
 import UserImage from '../assets/images/user-image.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {AuthContext} from '../contexts/Auth';
-import uuidv4 from 'uuid/v4';
-
+import uuid from 'uuid/v4';
+import usePersistStorage from '../hooks/usePersistStorage';
 import useWindowSize from '../hooks/useWindowSize';
+import { pathnameToString } from '../helpers/utilities';
 import '../assets/scss/topnav.scss';
-import uuid from 'uuid';
 
-function Topnav({ menu, history, ...rest }) {
+function Topnav({ menu, history, location, ...rest }) {
   const windowSize = useWindowSize();
+  const [persistedValue] = usePersistStorage('merch-dash-user');
   const [isMobile, setIsMobile] = useState(false);
   const { dispatch } = useContext(AuthContext);
+  const { pathname } = location;
+
   const logout = () => {
     localStorage.removeItem('merch-dash-user');
     localStorage.removeItem('merch-dash-is-authenticated');
@@ -23,7 +26,6 @@ function Topnav({ menu, history, ...rest }) {
   }
 
   const renderMobileMenu = () => {
-    console.log(menu, 'menu')
     return menu.map(({ path, name, icon, showInMenu, customClass }) => (
       (showInMenu) ?
         <div className="dropdown-item">
@@ -64,7 +66,7 @@ function Topnav({ menu, history, ...rest }) {
           <div className="breadcrumb-entry">Home
             <FontAwesomeIcon icon={faChevronRight} className="breadcrumb-icon" />
           </div>
-          <div className="breadcrumb-entry active">Dashboard</div>
+      <div className="breadcrumb-entry active">{ pathnameToString(pathname) }</div>
         </div>
       </div>
       <div className="user-nav">
@@ -72,7 +74,7 @@ function Topnav({ menu, history, ...rest }) {
           <img src={UserImage} className="user-image" />
           <div className="user-name pointer-cursor">
             <Dropdown
-              label="Starry Mae Gelvezon"
+              label={persistedValue.name}
               icon={faChevronDown}
             >
               <div className="dropdown-item">Settings</div>

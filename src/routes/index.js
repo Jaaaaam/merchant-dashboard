@@ -31,7 +31,7 @@ function PageRouter() {
               />
             ))
           }
-          <Redirect to="/dashboard" />
+          <Redirect to="/merchants" />
         </Switch>
       </Suspense>
     </Router>

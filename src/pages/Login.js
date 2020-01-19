@@ -20,7 +20,7 @@ function Login(props) {
   const login = () => {
     dispatch({ type: 'login', payload: form });
     setRedirectToReferrer(true);
-    props.history.push("/dashboard");
+    props.history.push("/merchants");
   }
 
   const handleFormChange = (e) => {
