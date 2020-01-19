@@ -45,3 +45,13 @@ button {
   font-weight: bold;
   font-size: 16px;
 }
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.full-width {
+  width: 100%;
+  margin: 0 15px;
+}

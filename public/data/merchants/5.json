@@ -1,6 +1,245 @@
 {
   "data": [
-
+    {
+      "id": 41,
+      "name": "Audio Refinery",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 42,
+      "name": "Cherry Mobile",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 43,
+      "name": "iStudio",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 44,
+      "name": "iStudio",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 45,
+      "name": "Univox",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 46,
+      "name": "VillMan Computers",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 47,
+      "name": "Abenson",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 48,
+      "name": "Primier Photoshop",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 49,
+      "name": "Aerofone",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 50,
+      "name": "Spacecom - Centrio",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    }
   ],
   "totalPages": 5,
   "prevPage": 4,

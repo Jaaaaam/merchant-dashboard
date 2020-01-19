@@ -1,6 +1,245 @@
 {
   "data": [
-
+    {
+      "id": 11,
+      "name": "Miladay Jewels",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 12,
+      "name": "Ingersol",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 13,
+      "name": "Meridian Time Gear",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 14,
+      "name": "Metro Department Store",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 15,
+      "name": "A/X Armani Exchange",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 16,
+      "name": "Burberry",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 17,
+      "name": "Desigual",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 18,
+      "name": "Hedgren",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 19,
+      "name": "Lacoste",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 20,
+      "name": "F & F",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    }
   ],
   "totalPages": 5,
   "prevPage": 1,

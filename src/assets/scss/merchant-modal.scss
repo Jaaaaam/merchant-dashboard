@@ -1,0 +1,30 @@
+@import './variables.scss';
+
+.modal-content {
+  min-width: 500px;
+}
+
+.box {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+input {
+  display: block;
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  background: none;
+  border: 1px solid $light-gray;
+  padding: 5px 10px;
+}
+
+.input-label {
+  font-weight: bold;
+  font-size: 14px;
+  color: $pink;
+}

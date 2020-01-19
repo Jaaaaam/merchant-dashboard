@@ -39,13 +39,9 @@ function Merchants(props) {
     console.log(pageInfo, 'pageInfo test')
     return (
       <Pagination
-        activePage={pageInfo.currentPage} // 1
+        activePage={pageInfo.currentPage}
         totalPageCount={pageInfo.totalPages}
         fn={onPageClick}
-  //   onPrevNextClick: PropTypes.func.isRequired,
-  //   fn: PropTypes.func.isRequired,
-  //   customClass: PropTypes.string,
-  //   customStyle: PropTypes.instanceOf(Object)
       />
     )
   }

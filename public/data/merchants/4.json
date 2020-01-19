@@ -1,6 +1,245 @@
 {
   "data": [
-
+    {
+      "id": 31,
+      "name": "Blims Fine Furniture",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 32,
+      "name": "CSI Appliances",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 33,
+      "name": "Estee Lauder",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 34,
+      "name": "Habitat",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 35,
+      "name": "Power Mac",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 36,
+      "name": "LG Shop - SM Seaside",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 37,
+      "name": "Gui by 8Telcom",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 38,
+      "name": "Microsoft",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 39,
+      "name": "Samsung",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 40,
+      "name": "Nokia",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    }
   ],
   "totalPages": 5,
   "prevPage": 3,

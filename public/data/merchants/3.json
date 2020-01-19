@@ -1,6 +1,245 @@
 {
   "data": [
-
+    {
+      "id": 21,
+      "name": "The North Face",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 22,
+      "name": "Givenchy",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 23,
+      "name": "Estee Lauder",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 24,
+      "name": "G2000",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 25,
+      "name": "158 Designers' Blvd.",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 26,
+      "name": "Yves Saint Laurent",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 27,
+      "name": "Tumi",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 28,
+      "name": "Universal Access Travel and Tours",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 29,
+      "name": "Asian Home Appliance Center",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    },
+    {
+      "id": 30,
+      "name": "Metro Plaza",
+      "shippingFee": {
+        "metroManila": {
+          "box": 200,
+          "oversized": 300,
+          "bigPouch": 100,
+          "smallPouch": 50
+        },
+        "provincial": {
+          "box": 400,
+          "oversized": 500,
+          "bigPouch": 200,
+          "smallPouch": 100
+        },
+        "intraProvincial": {
+          "box": 500,
+          "oversized": 600,
+          "bigPouch": 300,
+          "smallPouch": 200
+        }
+      }
+    }
   ],
   "totalPages": 5,
   "prevPage": 2,
