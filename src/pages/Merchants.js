@@ -1,18 +1,18 @@
 import React, {useState, useEffect, Fragment} from 'react';
 import axios from 'axios';
 import List from '../components/List/List';
+import Pagination from '../components/Pagination';
 import AddEditMerchant from '../components/Merchant/AddEditMerchant';
 import ShowMerchantModal from '../components/Merchant/ShowMerchantModal';
 
 function Merchants(props) {
   const [merchants, setMerchants] = useState([]);
+  const [pageInfo, setPageInfo] = useState({});
   const [activeMerchant, setActiveMerchant] = useState({});
   const [addEditModalIsOpen, setAddEditModalIsOpen] = useState(false);
   const [showModalIsOpen, setShowModalIsOpen] = useState(false);
-  const [modalType, setModalType] = useState('');
   
   const addMerchant = () => {
-    setModalType('add');
     setAddEditModalIsOpen(true);
   }
 
@@ -26,12 +26,35 @@ function Merchants(props) {
     setActiveMerchant({});
   }
 
+  const getMerchants = async(page = 1) => {
+    const {data} = await axios.get(`../data/merchants/${page}.json`);
+    console.log(data, 'res')
+    const { totalPages, prevPage, nextPage,currentPage } = data;
+    setMerchants(data.data);
+    setPageInfo({totalPages, prevPage, nextPage,currentPage})
+  }
+
+  const renderPaginator = () => {
+    if (!Object.entries(pageInfo).length) return;
+    console.log(pageInfo, 'pageInfo test')
+    return (
+      <Pagination
+        activePage={pageInfo.currentPage} // 1
+        totalPageCount={pageInfo.totalPages}
+        fn={onPageClick}
+  //   onPrevNextClick: PropTypes.func.isRequired,
+  //   fn: PropTypes.func.isRequired,
+  //   customClass: PropTypes.string,
+  //   customStyle: PropTypes.instanceOf(Object)
+      />
+    )
+  }
+
+  const onPageClick = async({isActive, value}) => {
+    await getMerchants(value)
+  }
+
   useEffect(()=> {
-    const getMerchants = async() => {
-      const { data: {data} } = await axios.get('../data/merchants/1.json');
-      setMerchants(data);
-    }
-    
     getMerchants();
   }, [])
   return (
@@ -50,6 +73,7 @@ function Merchants(props) {
         setActiveMerchant={setActiveMerchant}
         setShowModalIsOpen={setShowModalIsOpen}
         setAddEditModalIsOpen={setAddEditModalIsOpen} />
+      {renderPaginator()}
       <ShowMerchantModal
         merchant={activeMerchant}
         isOpen={showModalIsOpen}
@@ -57,7 +81,6 @@ function Merchants(props) {
       <AddEditMerchant
         merchant={activeMerchant}
         isOpen={addEditModalIsOpen}
-        type={modalType}
         onClose={closeAddEditModal}
       />
     </Fragment>

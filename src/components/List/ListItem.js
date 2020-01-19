@@ -9,6 +9,7 @@ function ListItem({id, name, shippingFee, data, setMerchants, setActiveMerchant,
     setShowModalIsOpen(true);
   }
   const editMerchant = () => {
+    setActiveMerchant({id, name, shippingFee});
     setAddEditModalIsOpen(true)
   }
   const deleteMerchant = () => {

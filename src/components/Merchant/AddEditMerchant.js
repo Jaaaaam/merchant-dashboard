@@ -1,7 +1,10 @@
 import React from 'react';
 import Modal from 'react-responsive-modal';
 
-function AddEditMerchant({ type, isOpen, onClose, ...rest}) {
+function AddEditMerchant({ merchant, type, isOpen, onClose, ...rest}) {
+  console.log(merchant, 'merchant')
+  console.log(Object.entries(merchant), 'Object.entries(merchant)')
+
   return (
     <Modal
       open={isOpen}
@@ -10,7 +13,17 @@ function AddEditMerchant({ type, isOpen, onClose, ...rest}) {
         modal: { minWidth: '860px', minHeight: '90%'}
       }}
     >
-      test
+      <h3> { Object.entries(merchant).length ? 'Edit' : 'Add'} Merchant</h3>
+
+      <form>
+        <input />
+        <input />
+        <input />
+        <input />
+        <input />
+        <input />
+        <input />
+      </form>
     </Modal>
   )
 }
