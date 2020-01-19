@@ -43,11 +43,15 @@ function ListItem({id, name, shippingFee, data, setMerchants, setActiveMerchant,
       <div className="list-item-actions">
         <div className="list-item-action-item" onClick={() => editMerchant()}>
           <FontAwesomeIcon icon={faEdit} className="list-icon" />
-          Edit
+          <div className="list-item-action-item-label">
+            Edit
+          </div>
         </div>
         <div className="list-item-action-item" onClick={() => deleteMerchant()}>
           <FontAwesomeIcon icon={faTrashAlt} className="list-icon"/>
-          Delete
+          <div className="list-item-action-item-label">
+            Delete
+          </div>
         </div>
       </div>
     </div>

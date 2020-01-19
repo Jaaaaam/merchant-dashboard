@@ -25,7 +25,7 @@ function PrivateRoute({ menu, component: Component, ...rest }) {
             transitionEnterTimeout={500}
             transitionLeaveTimeout={300}
           >
-            <Topnav />
+            <Topnav menu={ menu } />
           </ReactCSSTransitionGroup>
           <Sidenav menu={ menu } />
           <div className="content">
