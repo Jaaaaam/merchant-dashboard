@@ -8,6 +8,10 @@
    .breadcrumb {
      display: none !important;
    }
+
+   .list-item-action-item-label {
+    display: none !important;
+  }
 }
 @media all and (max-width: 736px) {
   .login-hero-image-container {
