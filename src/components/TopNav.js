@@ -83,9 +83,6 @@ function Topnav({ menu, history, location, ...rest }) {
               </div>
             </Dropdown>
           </div>
-          <div className="user-settings">
-            <FontAwesomeIcon icon={faUserCog} className="settings-icon"/>
-          </div>
         </div>
       </div>
       </Fragment>

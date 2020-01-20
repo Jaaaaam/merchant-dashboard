@@ -5,8 +5,10 @@
 
 }
 @media all and (max-width: 980px) { 
-
- }
+   .breadcrumb {
+     display: none !important;
+   }
+}
 @media all and (max-width: 736px) {
   .login-hero-image-container {
     display: none;
