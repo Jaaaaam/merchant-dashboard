@@ -19,6 +19,13 @@
       background-color: $light-gray-2;
     }
 
+    .list-item-name {
+      &:hover {
+        text-decoration: underline;
+        color: $pink;
+      }
+    }
+
     .list-item-actions {
       display: flex;
       justify-content: space-around;

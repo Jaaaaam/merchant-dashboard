@@ -18,8 +18,8 @@ function ListItem({id, name, shippingFee, data, setMerchants, setActiveMerchant,
       text: "You won't be able to revert this!",
       icon: 'warning',
       showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
+      confirmButtonColor: '#4caf50',
+      cancelButtonColor: '#F35366',
       confirmButtonText: 'Yes, delete it!'
     }).then((result) => {
       if (result.value) {

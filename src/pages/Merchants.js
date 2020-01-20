@@ -4,6 +4,7 @@ import List from '../components/List/List';
 import Pagination from '../components/Pagination';
 import AddEditMerchant from '../components/Merchant/AddEditMerchant';
 import ShowMerchantModal from '../components/Merchant/ShowMerchantModal';
+import Loader from '../components/Loader';
 import uuid from 'uuid/v4';
 
 function Merchants(props) {
@@ -12,6 +13,7 @@ function Merchants(props) {
   const [activeMerchant, setActiveMerchant] = useState({});
   const [addEditModalIsOpen, setAddEditModalIsOpen] = useState(false);
   const [showModalIsOpen, setShowModalIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
   
   const addMerchant = () => {
     setAddEditModalIsOpen(true);
@@ -29,10 +31,10 @@ function Merchants(props) {
 
   const getMerchants = async(page = 1) => {
     const {data} = await axios.get(`../data/merchants/${page}.json`);
-
     const { totalPages, prevPage, nextPage,currentPage } = data;
     setMerchants(data.data);
     setPageInfo({totalPages, prevPage, nextPage,currentPage})
+    setIsLoading(false)
   }
 
   const renderPaginator = () => {
@@ -47,9 +49,11 @@ function Merchants(props) {
     )
   }
 
-  const onPageClick = async({isActive, value}) => {
-    console.log(value, 'HEY')
-    await getMerchants(value)
+  const onPageClick = async({value}) => {
+    setIsLoading(true)
+    setTimeout(() => {
+      getMerchants(value)
+    }, 1000)
   }
 
   const submit = (form) => {
@@ -100,7 +104,10 @@ function Merchants(props) {
   }
 
   useEffect(()=> {
-    getMerchants();
+    setIsLoading(true);
+    setTimeout(async() => {
+      getMerchants();
+    }, 1000)
   }, [])
   return (
     <Fragment>
@@ -112,13 +119,17 @@ function Merchants(props) {
           <button className="primary-button" onClick={()=>{addMerchant()}}>Add Merchant</button>
         </div>
       </div>
-      <List 
-        data={merchants}
-        setMerchants={setMerchants}
-        setActiveMerchant={setActiveMerchant}
-        setShowModalIsOpen={setShowModalIsOpen}
-        setAddEditModalIsOpen={setAddEditModalIsOpen} />
-      {renderPaginator()}
+      { (isLoading) ? <Loader /> :
+        <Fragment>
+          <List 
+          data={merchants}
+          setMerchants={setMerchants}
+          setActiveMerchant={setActiveMerchant}
+          setShowModalIsOpen={setShowModalIsOpen}
+          setAddEditModalIsOpen={setAddEditModalIsOpen} />
+          {renderPaginator()}
+        </Fragment>
+      }
       <ShowMerchantModal
         merchant={activeMerchant}
         isOpen={showModalIsOpen}
